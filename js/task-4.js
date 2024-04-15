@@ -10,10 +10,12 @@ const handleClick = event => {
  
     if (email === "" || password === "") {
         console.log('Allert: All form fields must be filled in');
-    };
-    console.log(`email: ${email.trim()}, Password: ${password.trim()}`);
+    } else {
+      console.log({Email:`${email.trim()}`, Password:`${password.trim()}`});
   form.reset();
-}
+    }
+    
+};
 
 form.addEventListener("submit", handleClick);
     
